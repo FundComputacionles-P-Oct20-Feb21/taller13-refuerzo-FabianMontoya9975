@@ -1,0 +1,28 @@
+1. Inicio
+
+2. funcion principal()
+3.     k, i[0-n]
+4.     k1, i[0-n]
+5.     contador, [0-n] <-- 0
+6.     Escribir "Ingresar un número: "
+7.     Leer k
+8.     k1 <-- k
+9.     Mientas (k1 > 0) entonces
+10.         Escribir obtenerResiduo(k1) + " * 10 elevado a la potencia "
+                     + contador
+11.         k1 <-- obtenerDivision(k1)
+12.         contador <-- contador + 1
+13.     Fin Mientras
+14. fin función principal()
+
+15. funcion obtenerResiduo(numero, i) : i
+16.     numero <-- numero MOD 10
+17.     return numero
+18. fin funcion obtenerResiduo
+
+19. funcion obtenerDivision(valor, i) : i
+20.     valor <-- valor /10
+21.     return valor
+22. fin funcion obtenerDivision
+
+23. Fin
